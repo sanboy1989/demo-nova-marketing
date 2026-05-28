@@ -8,6 +8,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){
+      // Disable right-click
+      document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+      // Disable keyboard shortcuts
+      document.addEventListener('keydown', function(e){
+        var k = e.key ? e.key.toLowerCase() : '';
+        if (e.key === 'F12') { e.preventDefault(); return false; }
+        if (e.ctrlKey && ['u','s','a','p'].includes(k)) { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.shiftKey && ['i','j','c','k'].includes(k)) { e.preventDefault(); return false; }
+        if (e.metaKey && ['u','s','a','p'].includes(k)) { e.preventDefault(); return false; }
+        if (e.metaKey && e.shiftKey && ['i','j','c'].includes(k)) { e.preventDefault(); return false; }
+      });
+      // Disable image drag
+      document.addEventListener('dragstart', function(e){
+        if (e.target.tagName === 'IMG') e.preventDefault();
+      });
+    })();
+  </script>
 </head>
 <body>
 
