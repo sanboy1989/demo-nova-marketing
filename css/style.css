@@ -221,15 +221,17 @@ em { font-style: italic; color: var(--accent); }
 .carousel-viewport { overflow: hidden; border-radius: var(--r); }
 .carousel-track {
   display: flex;
+  align-items: stretch;
   transition: transform 0.55s cubic-bezier(0.77, 0, 0.175, 1);
   will-change: transform;
 }
-.carousel-slide { flex: 0 0 100%; min-width: 0; }
+.carousel-slide { flex: 0 0 100%; min-width: 0; display: flex; }
 
 .carousel-card {
   display: grid;
   grid-template-columns: 55% 45%;
-  min-height: 480px;
+  height: 480px;
+  width: 100%;
   background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: var(--r);
@@ -558,8 +560,8 @@ em { font-style: italic; color: var(--accent); }
 @media (max-width: 900px) {
   .section { padding: 72px 0; }
   .events-grid { grid-template-columns: repeat(2,1fr); }
-  .carousel-card { grid-template-columns: 1fr; min-height: auto; }
-  .carousel-img-side { aspect-ratio: 16/9; }
+  .carousel-card { grid-template-columns: 1fr; height: auto; }
+  .carousel-img-side { aspect-ratio: 16/9; height: auto; }
   .carousel-info-side { padding: 28px 24px 32px; }
   .carousel-title { font-size: 26px; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
