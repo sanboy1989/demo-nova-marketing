@@ -280,22 +280,32 @@ em { font-style: italic; color: var(--accent); }
 .carousel-cta { align-self: flex-start; }
 .photo-count { opacity: 0.65; font-size: 11px; }
 
-/* Controls */
-.carousel-controls {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-top: 20px; padding: 0 4px;
-}
-.carousel-btn {
-  width: 44px; height: 44px; border-radius: 50%;
-  border: 1px solid var(--border-2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 24px; color: var(--text-2);
-  transition: all var(--ease); flex-shrink: 0;
-}
-.carousel-btn:hover { border-color: var(--accent); color: var(--accent); }
+/* Arrow buttons — float over left/right edges of the card */
+.carousel-wrapper { position: relative; }
 
-.carousel-indicators { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-.carousel-dots { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: center; max-width: 300px; }
+.carousel-btn {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  z-index: 10;
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; color: rgba(255,255,255,0.85);
+  transition: all var(--ease);
+}
+.carousel-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,0,0,0.75); }
+.carousel-prev { left: 14px; }
+.carousel-next { right: 14px; }
+
+/* Dots + counter below */
+.carousel-controls {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  margin-top: 16px;
+}
+.carousel-dots { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: center; }
 .carousel-dot {
   width: 6px; height: 6px; border-radius: 50%;
   background: var(--border-2); transition: all var(--ease);
