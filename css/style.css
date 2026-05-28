@@ -218,26 +218,30 @@ em { font-style: italic; color: var(--accent); }
 .projects-grid { position: relative; }
 .carousel-empty { color: var(--text-2); text-align: center; padding: 60px 0; font-size: 15px; }
 
-.carousel-viewport { overflow: hidden; border-radius: var(--r); }
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: var(--r);
+  height: 480px;
+}
 .carousel-track {
   display: flex;
-  align-items: stretch;
+  height: 100%;
   transition: transform 0.55s cubic-bezier(0.77, 0, 0.175, 1);
   will-change: transform;
 }
-.carousel-slide { flex: 0 0 100%; min-width: 0; display: flex; }
+.carousel-slide { flex: 0 0 100%; min-width: 0; height: 100%; }
 
 .carousel-card {
   display: grid;
   grid-template-columns: 55% 45%;
-  height: 480px;
+  height: 100%;
   width: 100%;
   background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: var(--r);
   overflow: hidden;
 }
-.carousel-img-side { position: relative; overflow: hidden; }
+.carousel-img-side { position: relative; overflow: hidden; height: 100%; }
 .carousel-img-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .carousel-type-pill {
@@ -560,6 +564,9 @@ em { font-style: italic; color: var(--accent); }
 @media (max-width: 900px) {
   .section { padding: 72px 0; }
   .events-grid { grid-template-columns: repeat(2,1fr); }
+  .carousel-viewport { height: auto; }
+  .carousel-track { height: auto; }
+  .carousel-slide { height: auto; }
   .carousel-card { grid-template-columns: 1fr; height: auto; }
   .carousel-img-side { aspect-ratio: 16/9; height: auto; }
   .carousel-info-side { padding: 28px 24px 32px; }
