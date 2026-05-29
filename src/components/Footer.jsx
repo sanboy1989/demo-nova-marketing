@@ -32,7 +32,7 @@ export default function Footer() {
               <a
                 key={l.label}
                 href={l.href}
-                className="text-[10px] tracking-[0.2em] uppercase text-neutral-500 hover:text-neutral-200 transition-colors duration-200"
+                className="text-[10px] tracking-[0.2em] uppercase text-neutral-400 hover:text-neutral-100 transition-colors duration-200"
               >
                 {l.label}
               </a>
@@ -45,7 +45,7 @@ export default function Footer() {
               <a
                 key={s}
                 href="#"
-                className="text-[10px] tracking-[0.16em] uppercase text-neutral-600 hover:text-neutral-300 transition-colors duration-200"
+                className="text-[10px] tracking-[0.16em] uppercase text-neutral-400 hover:text-neutral-100 transition-colors duration-200"
               >
                 {s}
               </a>

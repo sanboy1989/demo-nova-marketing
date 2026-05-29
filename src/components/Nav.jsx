@@ -44,7 +44,7 @@ export default function Nav() {
             <li key={l.label}>
               <a
                 href={l.href}
-                className="text-[11px] tracking-[0.18em] uppercase text-neutral-400 hover:text-neutral-50 transition-colors duration-200"
+                className="text-[11px] tracking-[0.18em] uppercase text-neutral-300 hover:text-neutral-50 transition-colors duration-200"
               >
                 {l.label}
               </a>
@@ -84,7 +84,7 @@ export default function Nav() {
               <a
                 href={l.href}
                 onClick={close}
-                className="text-[11px] tracking-[0.2em] uppercase text-neutral-400 hover:text-neutral-50 transition-colors"
+                className="text-[11px] tracking-[0.2em] uppercase text-neutral-300 hover:text-neutral-50 transition-colors"
               >
                 {l.label}
               </a>

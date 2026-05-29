@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir -p \"c:/vs code/Free/free_1/src/components\")"
+      "Bash(mkdir -p \"c:/vs code/Free/free_1/src/components\")",
+      "Bash(npm run *)"
     ],
     "additionalDirectories": [
       "c:\\vs code\\Free\\free_1\\src"

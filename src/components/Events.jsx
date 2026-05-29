@@ -39,7 +39,7 @@ const EVENTS = [
 
 function EventCard({ tag, title, desc, img }) {
   return (
-    <article className="group bg-neutral-950 hover:bg-neutral-900/80 transition-colors duration-500 overflow-hidden">
+    <article className="group bg-neutral-900 hover:bg-neutral-800/80 transition-colors duration-500 overflow-hidden">
       {/* Image with fixed aspect */}
       <div className="aspect-[4/3] overflow-hidden">
         <img
@@ -57,7 +57,7 @@ function EventCard({ tag, title, desc, img }) {
         <h3 className="text-[17px] font-medium text-neutral-100 mb-3 leading-snug tracking-tight">
           {title}
         </h3>
-        <p className="text-[13px] text-neutral-500 leading-relaxed">
+        <p className="text-[13px] text-neutral-400 leading-relaxed">
           {desc}
         </p>
       </div>
@@ -79,7 +79,7 @@ export default function Events() {
             <h2 className="text-4xl md:text-6xl font-light text-neutral-50 leading-tight tracking-tight">
               Events We Cover
             </h2>
-            <p className="text-[13px] text-neutral-500 max-w-xs leading-relaxed lg:text-right">
+            <p className="text-[13px] text-neutral-400 max-w-xs leading-relaxed lg:text-right">
               From intimate ceremonies to large-scale commercial projects — a unique
               aerial perspective for every occasion.
             </p>

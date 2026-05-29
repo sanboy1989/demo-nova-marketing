@@ -3,7 +3,7 @@ import { useState } from 'react'
 const DETAILS = [
   { icon: '✉', label: 'Email',             value: 'Hallo@aeroreelmedia.com' },
   { icon: '☎', label: 'Phone (Text Only)', value: '825-288-2184' },
-  { icon: '◍', label: 'Base',              value: 'Hong Kong' },
+  { icon: '◍', label: 'Base',              value: 'Calgary & Remote' },
 ]
 
 const SOCIALS = ['Instagram', 'YouTube', 'Facebook']
@@ -38,7 +38,7 @@ export default function Contact() {
                     <div className="text-[9px] tracking-[0.24em] uppercase text-neutral-500 mb-0.5">
                       {d.label}
                     </div>
-                    <div className="text-[14px] text-neutral-200">{d.value}</div>
+                    <div className="text-[14px] text-neutral-100">{d.value}</div>
                   </div>
                 </div>
               ))}
@@ -62,7 +62,7 @@ export default function Contact() {
             <h3 className="text-xl font-light text-neutral-50 mb-3 tracking-tight">
               Stay Inspired
             </h3>
-            <p className="text-[13px] text-neutral-400 leading-relaxed mb-8">
+            <p className="text-[13px] text-neutral-300 leading-relaxed mb-8">
               Subscribe to receive our latest work, behind-the-scenes content, and exclusive
               offers.
             </p>

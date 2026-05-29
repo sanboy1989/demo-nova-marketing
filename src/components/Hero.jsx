@@ -12,7 +12,7 @@ export default function Hero() {
           className="w-full h-full object-cover"
         />
         {/* Dual gradient: dark vignette bottom + subtle top tint */}
-        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/55 to-neutral-950/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/40 to-transparent" />
       </div>
 
@@ -33,7 +33,7 @@ export default function Hero() {
             Visuals
           </h1>
 
-          <p className="text-[15px] text-neutral-400 font-light leading-relaxed max-w-md mb-10">
+          <p className="text-[15px] text-neutral-300 font-light leading-relaxed max-w-md mb-10">
             Professional drone photography &amp; videography for weddings, real estate,
             corporate events, and beyond.
           </p>

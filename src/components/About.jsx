@@ -34,13 +34,13 @@ export default function About() {
               <span className="text-neutral-400 font-extralight">For New Perspectives</span>
             </h2>
 
-            <p className="text-[14px] text-neutral-400 leading-relaxed mb-5">
+            <p className="text-[14px] text-neutral-300 leading-relaxed mb-5">
               Founded in Hong Kong in 2017, Aeroreel Media began with a simple belief: every
               story deserves to be told from the perfect angle. Our founder Andy started with a
               drone and a dream — and has since grown into a full-service visual storytelling
               studio.
             </p>
-            <p className="text-[14px] text-neutral-400 leading-relaxed mb-14">
+            <p className="text-[14px] text-neutral-300 leading-relaxed mb-14">
               We combine technical expertise with creative vision to deliver content that doesn't
               just document — it captivates.
             </p>
@@ -52,7 +52,7 @@ export default function About() {
                   <div className="text-3xl lg:text-4xl font-light text-neutral-50 tracking-tight leading-none">
                     {s.num}
                   </div>
-                  <div className="text-[9px] tracking-[0.18em] uppercase text-neutral-500 mt-2 leading-tight">
+                  <div className="text-[9px] tracking-[0.18em] uppercase text-neutral-400 mt-2 leading-tight">
                     {s.label}
                   </div>
                 </div>
