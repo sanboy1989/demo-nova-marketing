@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           {/* Eyebrow */}
           <p className="text-[11px] tracking-[0.35em] uppercase text-accent mb-7 font-light">
-            Hong Kong's Premier Aerial Media Studio
+            Creative Studio Based in Calgary
           </p>
 
           {/* Headline — extreme size contrast is intentional */}

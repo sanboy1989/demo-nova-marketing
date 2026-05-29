@@ -21,7 +21,7 @@ export default function About() {
             <div className="absolute -bottom-5 -right-5 w-36 h-24 border border-accent/25 hidden lg:block pointer-events-none" />
             {/* Floating label */}
             <div className="absolute top-6 left-6 bg-neutral-950/80 backdrop-blur-sm px-4 py-2">
-              <span className="text-[9px] tracking-[0.28em] uppercase text-accent">Est. 2017, Hong Kong</span>
+              <span className="text-[9px] tracking-[0.28em] uppercase text-accent">Est. 2017, Calgary</span>
             </div>
           </div>
 
@@ -35,7 +35,7 @@ export default function About() {
             </h2>
 
             <p className="text-[14px] text-neutral-300 leading-relaxed mb-5">
-              Founded in Hong Kong in 2017, Aeroreel Media began with a simple belief: every
+              Founded in Calgary in 2017, Aeroreel Media began with a simple belief: every
               story deserves to be told from the perfect angle. Our founder Andy started with a
               drone and a dream — and has since grown into a full-service visual storytelling
               studio.
