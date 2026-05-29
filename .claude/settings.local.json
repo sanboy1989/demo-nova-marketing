@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(mkdir -p \"c:/vs code/Free/free_1/src/components\")",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npx serve *)",
+      "Bash(npx serve@14 . -l 4200)",
+      "Bash(git ls-tree *)",
+      "Bash(mkdir \"c:\\\\vs code\\\\Free\\\\aeroreel_site\")",
+      "Bash(mkdir \"c:\\\\vs code\\\\Free\\\\aeroreel_site\\\\css\")",
+      "Bash(mkdir \"c:\\\\vs code\\\\Free\\\\aeroreel_site\\\\js\")",
+      "Bash(mkdir \"c:\\\\vs code\\\\Free\\\\aeroreel_site\\\\admin\")"
     ],
     "additionalDirectories": [
       "c:\\vs code\\Free\\free_1\\src"
