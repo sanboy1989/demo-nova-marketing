@@ -61,31 +61,41 @@
   </div>
 
   <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
-    <div class="hero-content">
-      <div class="hero-badge reveal">✦ Creative Studio Based in Hong Kong</div>
-      <h1 class="hero-title reveal">
-        We Make Brands<br>
-        <span class="grad-text">Unforgettable.</span>
-      </h1>
-      <p class="hero-desc reveal">From stunning websites to scroll-stopping content — we craft digital experiences that turn heads and drive real results.</p>
-      <div class="hero-actions reveal">
-        <a href="#contact" class="btn btn-grad">Start Your Project</a>
-        <a href="#portfolio" class="btn btn-ghost">See Our Work</a>
+  <section class="hv" id="home">
+    <!-- Full-bleed video -->
+    <video class="hv__video" autoplay muted loop playsinline>
+      <source src="video/background.webm" type="video/webm">
+    </video>
+
+    <!-- Dual-layer overlay: bottom-up dark + left-side gradient -->
+    <div class="hv__overlay"></div>
+
+    <!-- Content -->
+    <div class="hv__body">
+
+      <!-- Main grid: headline left / descriptor right -->
+      <div class="hv__grid">
+        <div class="hv__left">
+          <p class="hv__eyebrow">Creative Studio &mdash; Calgary</p>
+          <h1 class="hv__headline">
+            We Make<br>Brands<br>Unforgettable.
+          </h1>
+        </div>
+        <div class="hv__right">
+          <p class="hv__desc">From stunning websites to scroll-stopping content — we craft digital experiences that turn heads and drive real results.</p>
+          <a href="#contact" class="hv__cta">Start a Project <span aria-hidden="true">&rarr;</span></a>
+        </div>
       </div>
-      <div class="hero-tags reveal">
-        <span class="hero-tag" style="--c:#00D2FF">Web Design</span>
-        <span class="hero-tag" style="--c:#FFD93D">Photography</span>
-        <span class="hero-tag" style="--c:#FF3CAC">Social Media</span>
-        <span class="hero-tag" style="--c:#6BCB77">All-in-One</span>
+
+      <!-- Bottom rule strip -->
+      <div class="hv__foot">
+        <span class="hv__location">Calgary &amp; Remote</span>
+        <div class="hv__scroll">
+          <span>Scroll</span>
+          <div class="hv__scroll-line"></div>
+        </div>
       </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+
     </div>
   </section>
 
@@ -99,7 +109,7 @@
       </div>
       <div class="services-grid">
 
-        <div class="service-card reveal" style="--accent:#00D2FF" data-delay="0">
+        <div class="service-card reveal" style="--accent:#ffffff" data-delay="0">
           <div class="service-icon-wrap">
             <div class="service-icon">&#9671;</div>
           </div>
@@ -114,7 +124,7 @@
           <a href="#contact" class="service-cta">Get a Quote &rarr;</a>
         </div>
 
-        <div class="service-card reveal" style="--accent:#FFD93D" data-delay="100">
+        <div class="service-card reveal" style="--accent:#ffffff" data-delay="100">
           <div class="service-icon-wrap">
             <div class="service-icon">&#9711;</div>
           </div>
@@ -129,7 +139,7 @@
           <a href="#contact" class="service-cta">Get a Quote &rarr;</a>
         </div>
 
-        <div class="service-card reveal" style="--accent:#FF3CAC" data-delay="200">
+        <div class="service-card reveal" style="--accent:#ffffff" data-delay="200">
           <div class="service-icon-wrap">
             <div class="service-icon">&#9678;</div>
           </div>
@@ -358,7 +368,7 @@
               <span class="contact-icon">◍</span>
               <div>
                 <span class="contact-label">Based In</span>
-                <span class="contact-value">Hong Kong &amp; Remote</span>
+                <span class="contact-value">Calgary &amp; Remote</span>
               </div>
             </div>
             <div class="social-row">
@@ -398,7 +408,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 NOVA Creative Studio. All rights reserved.</p>
+        <p>&copy; 2026 NOVA Creative Studio. All rights reserved.</p>
         <p class="demo-badge">[ DEMO — Framework Preview ]</p>
       </div>
     </div>
